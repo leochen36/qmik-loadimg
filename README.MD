@@ -12,6 +12,8 @@
 
 //说明:把需要懒加载的 img标签 的class 要包含 lazy, 包含_src图片地址
 
+//如: &ltimg class="lazy" _src="http://xxx.com/a.png" /&gt
+
 
 $.use("http://xxx.xxx/qmik-loadimg.js", function(Load){
     Load.load();
