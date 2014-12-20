@@ -10,7 +10,9 @@
 </body>
 </html>
 
-~~//说明:把需要懒加载的 img标签 的class 要包含 lazy, 包含_src图片地址
+//说明:把需要懒加载的 img标签 的class 要包含 lazy, 包含_src图片地址
+
+
 $.use("http://xxx.xxx/qmik-loadimg.js", function(Load){
     Load.load();
 })
