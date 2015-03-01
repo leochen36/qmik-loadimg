@@ -1,10 +1,16 @@
 /**
  *图片懒加载模块
+ * 依赖Qmik版本:2.1
  */
 (function ($) {
     var win = window,
         interval = 100;//时间间隔
-
+    if( !$.isQmik ){
+        console.error("没有引入依赖框架Qmik,请引入Qmik2.1以上的版本")
+    }
+    if(parseFloat($.version) < 2.1){
+        console.error("依赖Qmik版本2.1")
+    }
     function initScroll() {
         var loadIndex = 0;
         var prevTime = new Date().getTime();
