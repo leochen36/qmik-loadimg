@@ -1,0 +1,267 @@
+body {
+    padding: 0;
+    margin: 0
+}
+
+.base_data_list_view {
+    overflow: hidden;
+    margin-top: 2px
+}
+
+.base_data_list_view ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: relative
+}
+
+.base_data_list_view .item_list {
+    font-family: "微软雅黑", "Microsoft YaHei";
+    -webkit-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    word-wrap: break-word;
+    display: inline-block;
+    width: 100%;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    min-height: 220px;
+    vertical-align: top;
+    overflow: hidden
+}
+
+.base_data_list_view span {
+    text-decoration: none
+}
+
+.base_data_list_view .items_container {
+    text-align: center;
+    display: inline-block;
+    width: 100%
+}
+
+.base_data_list_view .item_list .item {
+    display: inline-block;
+    width: 47.5%;
+    margin: 2px;
+    position: relative;
+    border: 1px solid #efefef;
+    background: #fff;
+    text-overflow: clip;
+    overflow: hidden;
+    min-height: 100px
+}
+
+.base_data_list_view .item_list .item .image {
+    display: inline-block
+}
+
+.base_data_list_view .item_list .item .image img {
+    min-height: 10px
+}
+
+.base_data_list_view .item_list .item .item_block {
+    display: block;
+    position: relative;
+    top: 0
+}
+
+.base_data_list_view .item_list .item p {
+    margin: 0
+}
+
+.base_data_list_view .item_list .item .title {
+    text-align: left;
+    font-size: 12px;
+    height: 16px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: inline-block;
+    overflow: hidden;
+    line-height: 15px;
+    width: 97%;
+    margin: 0 auto
+}
+
+.base_data_list_view .item_list .item .item_info {
+    margin: 2px 2px 4px
+}
+
+.base_data_list_view .item_bottom {
+    text-align: left;
+    font-size: 12px;
+    position: relative
+}
+
+.base_data_list_view .item .price {
+    font-size: 15px;
+    color: #c40000;
+    display: inline-block;
+    padding: 0 4px 0 2px
+}
+
+.base_data_list_view .item_list .item .align_right {
+    float: right
+}
+
+.base_data_list_view .item_list .item del {
+    font-size: 12px;
+    color: #999
+}
+
+.base_data_list_view .item_list .item .mai {
+    position: absolute;
+    right: 0;
+    bottom: 0
+}
+
+.base_data_list_view .item_list .item .item_photo {
+    width: 100%;
+    min-height: 100px;
+    border: 0;
+    padding: 0;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAB9JREFUeNpi/P//PwMlgImBQjBqwKgBowYMFgMAAgwAY5oDHVti48YAAAAASUVORK5CYII=);
+    background-size: 100% 100%
+}
+
+.base_data_list_view .pre_photo {
+    width: 97%;
+    display: inline-block;
+    margin: 5px auto 0
+}
+
+.base_data_list_view .item_list .item .discount {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    background-color: #e40693;
+    z-index: 1;
+    text-align: center;
+    line-height: 32px;
+    color: #fff;
+    overflow: hidden;
+    opacity: .8
+}
+
+.base_data_list_view .item_list .filling {
+    opacity: 0;
+    filter: alpha(opacity=0)
+}
+
+.base_data_list_view_pointer {
+    pointer-events: none
+}
+
+.base_data_list_view .item_list .item a, .base_data_list_view .item_list .item a:active, .base_data_list_view .item_list .item a:link, .base_data_list_view .item_list .item a:visited {
+    text-decoration: none;
+    color: #585858
+}
+
+.head {
+    height: 37px;
+    line-height: 37px;
+    background: #900;
+    font-size: 17px;
+    color: #f6f6f6;
+    -webkit-box-shadow: 1px 1px 4px #000;
+    -ms-box-shadow: 1px 1px 4px #000;
+    box-shadow: 1px 1px 4px #000;
+    -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+    -ms-tap-highlight-color: rgba(255, 0, 0, 0);
+    tap-highlight-color: rgba(255, 0, 0, 0);
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    user-drag: none;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden
+}
+
+.head #mai {
+    min-width: 70px;
+    text-align: right;
+    margin-right: -3px;
+    display: inline-block
+}
+
+.head div {
+    display: inline-block;
+    -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+    -ms-tap-highlight-color: rgba(255, 0, 0, 0);
+    tap-highlight-color: rgba(255, 0, 0, 0);
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    user-drag: none
+}
+
+.head div:nth-child(1) {
+    padding-left: 30px
+}
+
+.page li, .page ul {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0
+}
+
+.head #tab li.all {
+    width: 80px;
+    text-align: center;
+    margin-left: 10px
+}
+
+.head #tab li.active {
+    text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #900, 0 0 1px #900;
+    font-size: 20px
+}
+
+.head #tab {
+    padding-left: 70px;
+    font-size: 0
+}
+
+.head #tab li {
+    min-width: 80px;
+    font-size: 17px;
+    text-align: center;
+    cursor: pointer
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: #f4f4f4;
+    font-family: "Microsoft YaHei", 微软雅黑, "Microsoft JhengHei", 华文细黑, STHeiti, MingLiu
+}
+
+.page {
+    overflow: hidden;
+    min-height: 320px
+}
+
+#mai {
+    text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #900, 0 0 1px #900
+}
+
+body .base_data_list_view .item_list .item {
+    max-width: 290px;
+    width: 290px;
+    height: 330px;
+    margin: 12px;
+    -webkit-box-shadow: 1px 1px 4px #000;
+    box-shadow: 1px 1px 4px #000;
+    border: 0
+}
+
+.base_data_list_view .item_list .item .image, .base_data_list_view .item_list .item .image img {
+    width: 290px;
+    height: 330px
+}

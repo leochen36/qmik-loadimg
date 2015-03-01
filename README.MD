@@ -14,7 +14,19 @@
 
 //如: &lt;img class="lazy" _src="http://xxx.com/a.png" /&gt;
 
-
+//方式1:
 $.use("http://xxx.xxx/qmik-loadimg.js", function(Load){
-    Load.load();
-})
+
+});
+
+
+//方式2,定义模块引用
+$.sun.config({
+    alias: {
+        "lib/qmik/loadimg", "http://xxx.xxx/qmik-loadimg.js"
+    }
+});
+$.use("lib/qmik/loadimg", function(Load){
+
+});
+
