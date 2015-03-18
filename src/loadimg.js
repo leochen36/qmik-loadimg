@@ -85,7 +85,7 @@
     });
     $(function () {
         initScroll();
-        Load.load();
+        $.delay(Load.load, 100);
         $.delay(Load.load, 1600);
     });
 
